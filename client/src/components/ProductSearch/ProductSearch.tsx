@@ -15,7 +15,7 @@ const ProductSearch = ()=>{
   }
 
   const handleClickSearch = () => {
-    fetch(`https://prueba-tecnica-vtex.onrender.com/product?sku=156235`)
+    fetch(`https://prueba-tecnica-vtex.onrender.com/product?sku=${valueSku}`)
       .then(response => {
         if(!response.ok){
           throw new Error('La solicitud no fue exitosa')
