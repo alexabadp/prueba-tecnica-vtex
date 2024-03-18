@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import styles from './productSummary.module.css';
 import { toDiscount } from "../../../utils/format";

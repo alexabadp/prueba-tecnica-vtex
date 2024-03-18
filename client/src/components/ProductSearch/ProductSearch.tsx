@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import { useContext, useState } from "react"
 import { AppContext } from "../../context/AppContext"
 import styles from './productSearch.module.css'
 import { useHistory } from 'react-router-dom';
@@ -15,7 +15,7 @@ const ProductSearch = ()=>{
   }
 
   const handleClickSearch = () => {
-    fetch(`http://localhost:3000/product?sku=${valueSku}`)
+    fetch(`https://prueba-tecnica-vtex.onrender.com/product?sku=156235`)
       .then(response => {
         if(!response.ok){
           throw new Error('La solicitud no fue exitosa')
@@ -23,7 +23,7 @@ const ProductSearch = ()=>{
         return response.json()
       })
       .then(data => {
-        setAppInformation(prevInfo => ({
+        setAppInformation((prevInfo:any) => ({
           ...prevInfo,
           products: data,
           sku: valueSku
@@ -32,7 +32,7 @@ const ProductSearch = ()=>{
       })
       .catch(error => {
         console.error('Error al obtener los productos:', error);
-        setAppInformation(prevInfo => ({
+        setAppInformation((prevInfo:any) => ({
           ...prevInfo,
           products: [],
           sku: valueSku

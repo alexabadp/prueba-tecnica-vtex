@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../context/AppContext";
 import { withRouter } from 'react-router-dom';
 import styles from './productDetail.module.css'
@@ -48,7 +48,7 @@ const ProductDetail = (props:any)=> {
                   <div className={styles.pdpDataSheet}>
                     <p className={styles.pdpDataSheetTitle}>Ficha Técnica</p>
                     <ul>
-                      {element?.['Ficha Técnica']?.map((item:any, index: number) => 
+                      {element?.['Ficha Técnica']?.map((item:string, index: number) => 
                         index <= 6 && (
                           <li>
                             {item}
@@ -80,7 +80,7 @@ const ProductDetail = (props:any)=> {
               <table>
                 <tbody>
                   {
-                    element?.['Ficha Técnica'].map((data:any) => (
+                    element?.['Ficha Técnica'].map((data:string) => (
                       <tr>
                         <td><strong>{data}</strong></td>
                         <td>{element[data]}</td>

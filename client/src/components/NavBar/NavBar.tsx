@@ -1,4 +1,3 @@
-import React from "react";
 import styles from './navBar.module.css';
 import { Link } from 'react-router-dom'
 import ProductSearch from "../ProductSearch/ProductSearch";
