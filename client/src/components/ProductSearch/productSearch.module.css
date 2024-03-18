@@ -42,6 +42,6 @@
 
 @media only screen and (max-width: 1025px) {
   .inputSearch{
-    min-width: 100px;
+    min-width: 70px;
   }
 }
