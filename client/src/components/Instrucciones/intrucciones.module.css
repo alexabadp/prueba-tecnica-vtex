@@ -1,0 +1,11 @@
+.informationTitle{
+  font-size: 28px;
+  text-align: center;
+}
+.InformationContainer{
+  background: #FFF;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  text-align: left;
+}

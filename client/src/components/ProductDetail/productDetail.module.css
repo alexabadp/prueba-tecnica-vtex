@@ -1,0 +1,167 @@
+.pdpContainer{
+  display: flex;
+  background-color: #FFF;
+  border-radius: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.pdpContainerLeft{
+  width: 35%;
+}
+
+.pdpImagen{
+  width: 100%;
+  max-height: 600px;
+}
+
+.separatorVertical{
+  border-right: 1px solid #7F7979;
+  margin: 0 10px;
+  
+}
+
+.separatorHorizontal{
+  border-bottom: 1px solid #dedede;
+  margin: 10px 0;
+}
+
+.pdpContainerRight{
+  padding: 0px 20px;
+  text-align: left;
+}
+
+.pdpBrand{
+  color: #dedede;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pdpProductName{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.pdpDescription{
+  max-width: 80%;
+}
+
+.pdpContainerRightBottom{
+  display: flex;
+  gap: 20px
+}
+
+.pdpDataSheet{
+  background: #ededed;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pdpDataSheetTitle{
+  font-weight: 700;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.pdpDataSheet ul {
+  margin: 0px;
+}
+
+.pdpSeeMore{
+  color: #3370C5;
+  margin-left: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.containerPrice{
+  width: 100%;
+}
+
+.containerCurrentPrice{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.containerListPrice{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.pdpDataSheet, .containerPrice {
+  flex: 1;
+}
+
+.pdpCurrentPriceTitle{
+  color: #3370C5;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pdpCurrentPrice{
+  color: #3370C5;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tableContainer{
+  background: #FFF;
+  padding: 10px 40px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.tableContainer table {
+  width: 100%;
+}
+
+.tableTitle{
+  color: #3370C5;
+  text-align: left;
+}
+
+.tableContainer table td {
+  width: 50%;
+  text-align: left;
+  border: none;
+  padding: 10px;
+}
+
+.tableContainer tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.brandAndSku{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pdpSku{
+  color: #d3d3d3;
+}
+
+@media only screen and (max-width: 1025px) {
+  .pdpContainerRightBottom{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .pdpContainerLeft{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .pdpContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+}

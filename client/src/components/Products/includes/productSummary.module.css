@@ -1,0 +1,97 @@
+.containerSummary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s all;
+  height: 100%;
+  gap: 5px;
+  margin-bottom: 5px;
+  max-width: 200px;
+}
+.containerSummary:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.discountSummary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border-radius: 0 0 0 10px;
+  background-color: #2a2c2f;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.imageSummary {
+  max-height: 180px;
+}
+
+.brandSummary {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.nameSummary {
+  all: unset;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: initial;
+  color: #000;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 30px;
+  text-align: left;
+  padding: 0 0 10px 0;
+}
+.nameSummary:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pricesSummary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 40px;
+}
+
+.priceSummary {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ea0029;
+}
+
+.listPriceSummary {
+  font-weight: 500;
+  font-size: 12px;
+  color: #5d5d5d;
+  text-decoration: line-through;
+}
+
+.buttonSummary{
+  border: 1px solid #3370C5;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  background: #3370C5;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.buttonSummary:hover{
+  color: #fff;
+}
